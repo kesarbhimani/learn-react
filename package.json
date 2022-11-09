@@ -1,0 +1,30 @@
+{
+  "name": "learn-react",
+  "version": "1.0.0",
+  "description": "Goalsetter app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kesarbhimani/learn-react.git"
+  },
+  "keywords": [],
+  "author": "Kesar Bhimani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kesarbhimani/learn-react/issues"
+  },
+  "homepage": "https://github.com/kesarbhimani/learn-react#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
