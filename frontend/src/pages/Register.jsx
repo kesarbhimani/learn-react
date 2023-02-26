@@ -12,19 +12,19 @@ function Register() {
   const { name, email, password, password2 } = formData;
 
   const onChange = (e) => {
-    setFormData((prevState)=>({
+    setFormData((prevState) => ({
       ...prevState,
-      [e.target.name]: e.target.value
-    }))
+      [e.target.name]: e.target.value,
+    }));
   };
 
   return (
     <>
       <section className="heading">
-        <h1>
+        <h1 class="font-mono text-blue-700">
           <FaUser /> Register
         </h1>
-        <p>Please create an account</p>
+        <p class="font-mono text-blue-500">Please create an account</p>
       </section>
 
       <section className="form">
@@ -32,7 +32,7 @@ function Register() {
           <div className="form-group">
             <input
               type="text"
-              className="form-control"
+              className="bg-gray-50 border border-gray-300 text-blue-800 font-medium text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full h-[50px] p-2.5 mt-[20px]"
               id="name"
               name="name"
               value={name}
@@ -43,7 +43,7 @@ function Register() {
           <div className="form-group">
             <input
               type="email"
-              className="form-control"
+              className="bg-gray-50 border border-gray-300 text-blue-800 font-medium text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full h-[50px] p-2.5 mt-[20px]"
               id="email"
               name="email"
               value={email}
@@ -54,7 +54,7 @@ function Register() {
           <div className="form-group">
             <input
               type="password"
-              className="form-control"
+              className="bg-gray-50 border border-gray-300 text-blue-800 font-medium text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full h-[50px] p-2.5 mt-[20px]"
               id="password"
               name="password"
               value={password}
@@ -65,7 +65,7 @@ function Register() {
           <div className="form-group">
             <input
               type="password"
-              className="form-control"
+              className="bg-gray-50 border border-gray-300 text-blue-800 font-medium text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full h-[50px] p-2.5 mt-[20px]"
               id="password2"
               name="password2"
               value={password2}
@@ -74,8 +74,8 @@ function Register() {
             ></input>
           </div>
           <div className="form-group">
-            <button type="submit" className="btn btn-block">
-Submit
+            <button type="submit" className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-10 border-b-4 border-blue-700 hover:border-blue-500 rounded  mt-[20px]">
+              Submit
             </button>
           </div>
         </form>
