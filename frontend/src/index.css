@@ -94,6 +94,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+	color: rgb(59 130 246);
 }
 
 .goal {
